@@ -4,9 +4,7 @@
 using namespace std;
 
 template<class T>Lista<T>::Lista(string x): tipo(x),testa(nullptr){}
-
 template<class T>Nodo<T>* Lista<T>::gettesta()const{ return this->testa; }
-
 template<class T>void Lista<T>::inserisci(T val)
 {
   Nodo<T> *nuovo= new Nodo<T>(val);

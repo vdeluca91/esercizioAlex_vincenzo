@@ -16,9 +16,6 @@ void CreaListe(Lista<Auto>& A,Lista<Moto>& M, Lista<Barca>& B, int n )
 		
 		cout<<"Inserisci la marca ed i cavalli del veicolo come nell'esempio -> Ferrari 100"<<endl;
 		cin>> m >> c;
-		
-		
-		
 		switch(scelta)
 		{
 			case 'A':
