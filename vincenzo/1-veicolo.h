@@ -10,7 +10,7 @@ class Veicolo
 		Veicolo(string m="Ferrari", int c=100);
 		bool operator>(const Veicolo&v);
 		bool operator<(const Veicolo&v);
-		friend ostream& operator<<(ostream&out, Veicolo&v);
+		friend ostream& operator<<(ostream&out, const Veicolo& v);
 };
 
 #endif

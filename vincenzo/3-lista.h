@@ -25,7 +25,7 @@ class Lista
  	
   Lista(string x);//:tipo(x),testa(nullptr){}
   
-  Nodo<T>* gettesta();//{ return testa; }
+  Nodo<T>* gettesta() const; //{ return testa; }
   
   
   void inserisci(T);
