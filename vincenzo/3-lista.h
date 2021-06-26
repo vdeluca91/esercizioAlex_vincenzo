@@ -25,14 +25,12 @@ class Lista
  	
   Lista(string x);//:tipo(x),testa(nullptr){}
   
-  Nodo<T>* gettesta(){ return testa; }
+  Nodo<T>* gettesta();//{ return testa; }
   
   
   void inserisci(T);
 	
-  template <class T> 
-  friend
-  std::ostream& operator << (std::ostream& out,const Lista<T>& L);
+  template<class U>friend ostream& operator << (ostream& out,const Lista<U>& L);
 };
 
 #endif
