@@ -20,14 +20,14 @@ class Auto:public Veicolo
 {
 	public:
 	Auto(string m,int c):Veicolo(m,c){}
-}
+};
 class Moto:public Veicolo
 {
 	public:
 	Moto(string m,int c):Veicolo(m,c){}
-}
+};
 class Barca:public Veicolo
 {
 	public:
 	Barca(string m,int c):Veicolo(m,c){}
-}
+};
