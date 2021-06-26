@@ -5,11 +5,11 @@ using namespace std;
 Veicolo::Veicolo(string m, int c):marca(m),cavalli(c){}
 bool Veicolo::operator>(const Veicolo&v)
 {
-	return cavalli > v.cavalli;
+	return this->cavalli > v.cavalli;
 }
 bool Veicolo::operator<(const Veicolo&v)
 {
-	return cavalli < v.cavalli;
+	return this->cavalli < v.cavalli;
 }
 ostream& operator<<(ostream&out, const Veicolo&v)
 {
