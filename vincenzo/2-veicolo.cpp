@@ -3,11 +3,11 @@
 using namespace std;
 
 Veicolo::Veicolo(string m, int c):marca(m),cavalli(c){}
-bool Veicolo::operator>(const Veicolo&v)
+bool Veicolo::operator>(const Veicolo&v) const
 {
 	return this->cavalli > v.cavalli;
 }
-bool Veicolo::operator<(const Veicolo&v)
+bool Veicolo::operator<(const Veicolo&v) const
 {
 	return this->cavalli < v.cavalli;
 }

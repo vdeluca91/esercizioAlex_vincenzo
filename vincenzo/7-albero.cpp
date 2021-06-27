@@ -4,17 +4,17 @@ using namespace std;
 
 template<class T> void Albero<T>::stampaPreorder() {
     Foglia<T>* temp = getRadice();
-
+    cout<<temp->getKey();
     _PreOrder(temp);
 }
 template<class T> void Albero<T>::stampaInorder() {
     Foglia<T> * temp = getRadice();
-
+    cout<<temp->getKey();
     _inOrder(temp);
 }
 template<class T> void Albero<T>::stampaPostorder() {
     Foglia<T>* temp = getRadice();
-
+    cout<<temp->getKey();
     _PostOrder(temp);
 }
 
@@ -22,24 +22,22 @@ template<class T> Albero<T>* Albero<T>::ins(T val) {
     Foglia<T> * iter = getRadice();
     Foglia<T> * nuovo = new Foglia<T>(val);
     Foglia<T> * y = nullptr; 
-    cout << "nuovo->getKey() has type: " << typeid(nuovo->getKey()).name() << '\n';
-    cout << "VAL has type: " << typeid(val).name() << '\n';
+    cout << "nuovo->getKey().cavalli has type: " << typeid(nuovo->getKey().cavalli).name() << '\n';
+    cout << "val.cavalli has type: " << typeid(val.cavalli).name() << '\n';
     // cout<< " val.cavalli "<< val.cavalli<<endl;
     // cout<< " nuovo->getKey() "<< nuovo->getKey()<<endl;   
     // cout<< " nuovo->getKey().cavalli "<< nuovo->getKey().cavalli<<endl;   
     // VAL.CAVALLI = nuovo->getKey().cavalli
     if (iter == nullptr)
     {
-        iter = nuovo; 
+        iter=nuovo; 
         return nullptr;
     }    
     while (iter != nullptr) {
-        y = iter;
+        y->setKey(iter->getKey());
         if ( val < y->getKey() )
         {
-
             iter = iter->getLeft(); 
-
         } 
         else
         {
@@ -50,7 +48,7 @@ template<class T> Albero<T>* Albero<T>::ins(T val) {
     if (y==nullptr) root=nuovo; 
 	else if (val < y->getKey()) y->setLeft(nuovo); 
 	else y->setRight(nuovo); 
-    
+
     return this;
 }
 

@@ -21,7 +21,7 @@ cout<< A <<endl;
 // cout<< M <<endl; 
 CreaAlberi(A,M,B,A1,M1,B1);
 // A1.stampaPreorder();
-//A1.stampaInorder();
+A1.stampaInorder();
 // A1.stampaPostorder();
 cout<<"|Albero Auto|"<<endl<< A1 <<endl;
 // cout<<"|Albero Moto|"<<endl<< M1 <<endl;
